@@ -1,0 +1,33 @@
+.tools {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools__part {
+    max-width: 500px;
+    min-height: 300px;
+}
+
+.tools_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 28px;
+}
+
+.tools_list img {
+    height: 90px;
+}
+
+.tools__title {
+    text-align: center;
+    margin-bottom: 18px;
+}

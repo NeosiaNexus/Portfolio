@@ -1,0 +1,60 @@
+.diplomes {
+    padding: var(--section-space);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.diplome__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.diplome__item {
+    background-color: var(--secondary);
+    padding: 35px;
+    border-radius: 30px;
+    color: var(--white);
+    max-width: 350px;
+    transition: all 0.5s ease-in-out;
+}
+
+.diplome__item:hover {
+    transform: rotate(2deg);
+}
+
+.diplome__item span {
+    text-shadow: none;
+}
+
+.diplome__item i {
+    color: var(--primary);
+}
+
+.diplome__item p:not(:first-child){
+    margin-bottom: 7px;
+    font-size: 1.02rem;
+}
+
+.diplome__item p:first-child{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: var(--weight-3);
+}
+
+.diplome__mention__badge {
+    padding: 5px 10px;
+    background-color: var(--primary);
+    font-size: 0.7rem;
+    color: var(--secondary);
+    font-weight: var(--weight-3);
+    border-radius: 50px;
+    display: inline-block;
+}

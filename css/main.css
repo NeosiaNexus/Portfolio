@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&display=swap');
+
+* {
+
+    font-family: 'Open Sans', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+    --secondary: rgb(36, 36, 36);
+    --secondary-light: rgb(109, 109, 109);
+    --white: rgb(255, 255, 255);
+
+    --weight-1: 500;
+    --weight-2: 600;
+    --weight-3: 700;
+    --weight-4: 800;
+
+    --section-space: 70px 20px;
+
+}
+
+/* GENERAL */
+
+.primary {
+    color: var(--primary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.secondary-light {
+    color: var(--secondary-light);
+}
+
+.box {
+    box-shadow: 2px 2px 10px 0.1px var(--secondary);
+}
+
+/* END GENERAL */
+
+/* HEADER */
+
+header {
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 35px;
+    background-color: var(--secondary);
+    border-bottom: 2px solid var(--secondary-light);
+}
+
+/* END HEADER */
+
+/* SECTION */
+
+.header__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__section__spacer {
+    margin-top: 13px;
+    width: 80px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+}
+
+.header__section__title {
+    font-size: 1.4rem;
+    font-weight: var(--weight-3);
+    text-transform: uppercase;
+}
+
+/* END SECTION */
+
+/* ARROW BACK */
+
+.arrow_back {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 88%;
+    left: 95%;
+    height: 30px;
+    width: 30px;
+    background-color: var(--primary);
+    font-weight: var(--weight-3);
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 1.6rem;
+    animation: goTopAnimation 2s infinite ease-in-out;
+}
+
+@keyframes goTopAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 5px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* END ARROW BACK */
+
+.color {
+    position: fixed;
+    top: 80%;
+    left: 95.3%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+.color {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .color::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+  }
+  .color::-moz-color-swatch {
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+  }
+
+  @media screen and (max-width: 1390px) {
+    .color {
+        left: 94.5%;
+    }
+    .arrow_back {
+        left: 94%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .color {
+        left: 93.5%;
+    }
+    .arrow_back {
+        left: 93%;
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    .color {
+        left: 92.5%;
+    }
+    .arrow_back {
+        left: 92%;
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    .color {
+        left: 91.5%;
+    }
+    .arrow_back {
+        left: 91%;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    .color {
+        left: 90.5%;
+    }
+    .arrow_back {
+        left: 90%;
+    }
+  }
+
+  @media screen and (max-width: 670px) {
+    .color {
+        left: 89.5%;
+    }
+    .arrow_back {
+        left: 89%;
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    .color {
+        left: 87.5%;
+    }
+    .arrow_back {
+        left: 87%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .color {
+        left: 86.5%;
+    }
+    .arrow_back {
+        left: 86%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .color {
+        left: 82.5%;
+    }
+    .arrow_back {
+        left: 82%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .color {
+        left: 80.5%;
+    }
+    .arrow_back {
+        left: 80%;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .color {
+        left: 79.5%;
+    }
+    .arrow_back {
+        left: 78%;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .color {
+        left: 78.5%;
+    }
+    .arrow_back {
+        left: 77%;
+    }
+  }
+

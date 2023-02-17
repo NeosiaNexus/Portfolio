@@ -1,0 +1,110 @@
+.hi {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background: url('../img/wood.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hi__me p {
+    color: var(--white);
+    text-shadow: 1px 1px 2px var(--secondary);
+}
+
+.hi__me p:nth-child(1){
+    font-size: 1.25rem;
+}
+
+.hi__me p:nth-child(2){
+    font-size: 1.7rem;
+    padding: 5px 0px;
+    font-weight: var(--weight-4);
+}
+
+.hi__me p:nth-child(3){
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+.hi__think {
+    color: var(--white);
+    max-width: 400px;
+    text-shadow: 1px 1px 2px var(--secondary);
+}
+
+.hi__think .primary{
+    font-weight: var(--weight-3);
+}
+
+.hi__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.hi__right img {
+    height: 230px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.hi__right .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    top: 100px;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    background-color: var(--secondary-light);
+    border: 4px solid var(--primary);
+}
+
+.cv__button {
+    background-color: var(--primary);
+    padding: 5px 25px;
+    border: 3px solid var(--primary-hsl);
+    font-weight: var(--weight-3);
+    color: var(--white);
+    font-size: 1.05rem;
+    text-shadow: 1px 1px 2px var(--secondary);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    animation: goTopAnimation 2s infinite ease-in-out;
+    animation-delay: 2.7s;
+    text-transform: uppercase;
+}
+
+.cv__button:hover {
+    border: 3px solid var(--primary-hsl);
+    background-color: var(--primary-hsl);
+    color: var(--white);
+}
+
+@media screen and (max-width: 790px) {
+    .hi {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .hi__right img {
+        height: 180px;
+    }
+    
+    .hi__right .circle {
+        width: 180px;
+        height: 180px;
+    }
+    .hi__left {
+        align-items: center;
+    }
+}

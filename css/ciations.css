@@ -1,0 +1,27 @@
+.citation__spacer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px;
+    background: url('../img/arbre.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.citation__content {
+    font-size: 1.2rem;
+    color: var(--white);
+    text-shadow: 1px 1px 2px var(--secondary);
+    margin-bottom: 8px;
+}
+
+.citation__author {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 0.90rem;
+    color: var(--primary);
+    text-shadow: 1px 1px 2px var(--secondary);
+    font-weight: var(--weight-3);
+}
